@@ -1,0 +1,13 @@
+<div class="property_selector">
+    <app-challange-title [passed_data_titles]="JSON_data_header" [selection_state]="selection_state"></app-challange-title>
+    <div *ngFor="let item of JSON_data.properties, index as index">
+        <app-challange-selectors 
+            (selected_indexes)="receive_selector_state($event)"
+            [item]="item" 
+            [index]="index"
+        ></app-challange-selectors>
+    </div>
+    <div>
+        <div (click)="send_data(select_state)">__APPLY</div>
+    </div>
+</div>

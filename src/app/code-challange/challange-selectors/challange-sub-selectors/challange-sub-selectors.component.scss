@@ -1,0 +1,11 @@
+.sub_category_title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 20px;
+}
+
+.sub_category_title--checkbox_wrapper {
+    &.input_selected {
+        background-color: rgb(68, 68, 161);
+    }
+}

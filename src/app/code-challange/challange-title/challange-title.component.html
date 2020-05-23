@@ -1,0 +1,13 @@
+<div class="header_wrapper">
+    <div class="title_info_wrapper">
+        <h1>{{passed_data_titles.header_name}}</h1>
+        <div class="subtitle_info_wrapper">
+            <h2 class="subtitle_info">{{passed_data_titles.game_name}}</h2>
+            <span *ngIf="selection_state.length > 0" class="seperator">|</span>
+            <h2 class="subtitle_info">{{selection_state}}</h2>
+        </div>
+    </div>
+    <div class="toggle_wrapper">
+        <div>></div>
+    </div>
+</div>

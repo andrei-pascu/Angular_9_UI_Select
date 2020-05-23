@@ -1,0 +1,10 @@
+<div class="sub_category_title">
+    <div class="sub_category_title--label">
+        <span>{{sub_properties}}</span>
+    </div>
+    <div [ngClass]="{'input_selected': selected}" 
+            class="sub_category_title--checkbox_wrapper"
+            (click)="category_select()">
+        <span>[x]</span>
+    </div>
+</div>
