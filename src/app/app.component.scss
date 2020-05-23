@@ -1,8 +1,9 @@
 .app_wrapper {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-color: rgb(4, 97, 97);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: 20vh;
 }

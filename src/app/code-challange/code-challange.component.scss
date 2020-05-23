@@ -2,3 +2,13 @@
     width: 400px;
     background-color: white;
 }
+
+.display_selectors {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &.hide_selectors {
+        max-height: 0;
+    }
+}

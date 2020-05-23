@@ -11,6 +11,7 @@ export class CodeChallangeComponent implements OnInit {
     // Initialize empty map variable
     select_state = [];
     result = [];
+    toggle_state = true;
 
     // Mock Data
     JSON_data = {
@@ -82,6 +83,10 @@ export class CodeChallangeComponent implements OnInit {
     // Apply Button, 'send' data
     send_data(data) {
         console.warn('CurrentSelected: ', this.result)
+    }
+
+    toggle_display(received_toggle_state) {
+        this.toggle_state = received_toggle_state;
     }
 
     ngOnInit(): void {
