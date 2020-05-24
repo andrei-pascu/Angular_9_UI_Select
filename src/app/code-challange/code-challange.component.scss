@@ -12,3 +12,31 @@
         max-height: 0;
     }
 }
+
+.cta_wrapper {
+    margin-top: -1px;
+    // padding-bottom: 4px; 
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #006fd3;
+    border-top: 1px solid #006fd3;
+    user-select: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 300ms;
+
+    &:hover {
+        background-color: #0070d32a;
+
+        .cta_container {
+            border-bottom: 2px #006fd3 solid;
+        }
+    }
+}
+
+.cta_container {
+    border-bottom: 2px rgba(0, 0, 0, 0) solid;
+    transition: 300ms;
+}

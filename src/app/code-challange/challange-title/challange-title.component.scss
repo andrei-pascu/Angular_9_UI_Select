@@ -1,13 +1,19 @@
 .header_wrapper {
-    height: 60px;
+    height: 85px;
     width: 100%;
     display: flex;
-    background-color: rgb(11, 75, 148);
+    background-color: rgb(0, 111, 211);
     color: white;
+    padding: 16px 0 16px 13px;
+    box-sizing: border-box;
 }
 
 .title_info_wrapper {
     width: 100%;
+
+    h1 {
+        font-size: 26px;
+    }
 }
 
 .subtitle_info_wrapper {
@@ -15,14 +21,52 @@
 
     .subtitle_info {
         font-size: 16px;
+        font-weight: normal;
+        padding-top: 4px;
     }
 
     .seperator {
-        padding: 0 5px;
+        padding: 3px 5px 0;
     }
 }
 
 
 .toggle_wrapper {
     min-width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding-right: 2px;
+
+    :hover {
+        background-color: rgb(0, 64, 121);
+        transition: background-color 300ms;
+    }
+}
+
+.toggle_container {
+    margin: 4px;
+    padding: 6px 6px 2px 6px;
+    cursor: pointer;
+    transition: background-color 1000ms;
+    border-radius: 7px;
+
+    svg {
+        height: 16px;
+        width: 16px;
+        fill: white;
+        transform: rotate(90deg);
+    }
+}
+
+.closed {
+    .toggle_container {
+        svg {
+            fill: white;
+            transform: rotate(270deg);
+        }
+    }
 }

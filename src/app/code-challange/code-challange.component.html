@@ -5,15 +5,15 @@
         (select_element_toggle)="toggle_display($event)">
     </app-challange-title>
     <div class="display_selectors" [ngClass]="{'hide_selectors': !toggle_state}">
-        <div *ngFor="let item of JSON_data.properties, index as index">
+        <div class="selector_category" *ngFor="let item of JSON_data.properties, index as index">
             <app-challange-selectors 
                 (selected_indexes)="receive_selector_state($event)"
                 [item]="item" 
                 [index]="index">
             </app-challange-selectors>
         </div>
-        <div>
-            <div (click)="send_data(select_state)">__APPLY</div>
+        <div class="cta_wrapper" (click)="send_data(select_state)">
+            <div class="cta_container">Apply</div>
         </div>
     </div>
 </div>

@@ -35,9 +35,10 @@ export class CodeChallangeComponent implements OnInit {
         ]
     };
 
+    // mapped only the necessary data
     JSON_data_header = {
         'header_name': this.JSON_data['header_name'],
-        'game_name': this.JSON_data['header_name']
+        'game_name': this.JSON_data['game_name']
     }
 
     // display the selected item
@@ -69,20 +70,20 @@ export class CodeChallangeComponent implements OnInit {
         }
 
         // Prints the names of the selected items
-        console.warn('CurrentSelected: ', this.result)
+        console.warn('Currently_Selected: ', this.result)
 
         if (this.result.length === 1) {
             this.selection_state = this.result[0];
         } else if (this.result.length === 0) {
             this.selection_state = '';
         } else {
-            this.selection_state = 'Multiple Items Selected';
+            this.selection_state = 'Multiple items selected';
         }
     }
 
     // Apply Button, 'send' data
     send_data(data) {
-        console.warn('CurrentSelected: ', this.result)
+        console.warn('Apply-----> ', this.result)
     }
 
     toggle_display(received_toggle_state) {
